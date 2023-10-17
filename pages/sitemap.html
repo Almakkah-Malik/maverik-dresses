@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../css/style (3).css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+   <title>Sitemap</title>
+   <script src="script.js"></script>
+</head>
+
+<script>
+  function cartToggle(){
+            let menu = document.getElementById("cart-items");
+            menu.classList.toggle("active");
+        }
+
+
+</script>
+
+<style>
+
+
+.container-sitemap{
+  margin-top: 40px;
+}
+  .sitemap{
+    margin-top: 20px;
+  }
+
+ 
+
+  .sitemap-parent{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+ }
+ 
+
+ .sitemap li{
+  line-height: 60px;
+  margin-bottom: 20px;
+background: #333;
+color: aliceblue;
+ position: relative;
+margin-left: 80px;
+font-size: larger;
+font-size: 18px;
+
+}
+
+.sitemap a{
+text-decoration: none;
+
+color: rgb(47, 45, 46);
+font-size: 18px;
+
+}
+
+
+.sitemap ul a .item{
+  background: #333;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  transition: all 0.5s ease;
+ 
+}
+
+
+.sitemap ul a .item:hover{
+
+color: rgb(252, 250, 251);
+
+border-radius: 80px;
+background-color:  #c4c0ea;
+}
+
+.sitemap h3{
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 10px;
+  background: #c4c0ea;
+  transition: 0.5s;
+}
+
+
+.sitemap h3:hover{
+
+color: rgb(252, 250, 251);
+
+border-radius: 80px;
+background-color:  #101010;
+}
+
+
+
+.sitemap .about h3{
+  margin-top: 40px;
+}
+
+.sitemap .gallery h3{
+  margin-bottom: 60px;
+}
+
+
+</style>
+
+
+<body>
+
+  <div class="container container-top">
+    <div class="row">
+        <header>
+          <nav>
+            <div class="logo"><a href="#"><img src="../images/logo3 (1).png" alt="" width="90px" height="90px"></a>
+            </div>
+                    
+          
+            <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+                        <ul class="menu">
+                            <li class="home"><a href="../index.html">Home</a></li>
+                            <li ><a href="./about.html" class="menu-item">About</a></li>
+                            <li><a href="./contactUs.html" class="menu-item">Contact</a></li>
+                            <li><a href="./gallery (1).html" class="menu-item">Gallery</a></li>
+                            <li class="cato"><a href="#" class="cato menu-item">Pages</a>
+                              <ul class="cato-menu">
+                                
+                                  <li><a href="./sitemap.html"  style="font-size: 17px; font-weight: 400;" >Sitemap</a></li>
+                                  <li><a href="./feedback.html"  style="font-size: 17px; margin-top: 5px; font-weight: 400;" >FeedBack</a></li>                                   
+                                
+                                </ul> </li>
+                            <li class="cato"><a href="#" class="cato menu-item">Categories</a>
+                            
+                              <ul class="cato-menu">
+                                <li><a href="./p.t.track pants.html" >P.T Pants</a></li>
+                                <li><a href="./p.t.shorts.html" >P.T Shorts</a></li>
+                                <li><a href="./p.t.tshirts.html" >T-Shirts</a></li>
+                                <li><a href="./shirts.html" >Shirts</a></li>
+                                <li><a href="./frocks.html" >Frocks</a></li>
+                                <li><a href="./skirt.html" >Skirts</a></li>
+                                <li><a href="./socks.html" >Socks</a></li>
+                                <li><a href="./logo.html" >Logos</a></li>
+                                <li><a href="./belts.html" >Belts</a></li>
+                                <li><a href="./ties.html" >Ties</a></li>
+                              </ul> 
+                            </li>
+
+                          
+                            <div class="icons">
+                              <a href="#"> <i class="fa fa-user-circle" ></i></a>
+                               <a href="#"> <i class="fa fa-heart-o" ></i></a>
+
+                              
+                                <a href="#" onclick="cartToggle()"> <i class="fa fa-shopping-cart" ></i></a>
+
+                                <div id="cart-items">
+                                   
+                                 <div class="cart-row">
+                                     <div class="cart-thmbnil">
+                                         <img src="../images/mens (3).jpeg" alt="" width="90px" height="80px">
+                                     </div>
+                     
+                                     <div class="thmbnil-content">
+                                      <a href=""> <h6>Men's Belt</h6></a>
+                                       <span class="quantity">Qty : 02</span> <br>
+                                       <span class="price">$200.00</span>
+                                   </div>
+                                       <div class="cart-icon">
+                                           <a href="#">
+                                               <i class="fa fa-close"></i></a>
+                                       </div>
+                                       
+                                  
+                                   </div>
+                   
+                                   
+                                  
+                   
+                               <div class="cart-row">
+                                   <div class="cart-thmbnil">
+                                       <img src="../images/school2.jpeg" alt=""  width="90px" height="90px">
+                                   </div>
+                   
+                                   <div class="thmbnil-content">
+                                       <a href=""> <h6>Girls Skirts</h6></a>
+                                       <span class="quantity">Qty : 01</span> <br>
+                                       <span class="price">$260.00</span>
+                                   </div>
+                     
+                                     <div class="cart-icon">
+                                         <a href="#">
+                                             <i class="fa fa-close"></i></a>
+                                     </div>
+                     
+                                 </div>
+                     
+                     
+                     
+                               
+                                 <div class="shipping">
+                                  
+                                     <span>shipping:</span>
+                                     <span class="cost">$20.00</span>                    
+                                 </div>
+                     
+                     
+                                 <div class="total-cost">                
+                                  
+                                     <span>Total:</span>                            
+                                     <span class="cost-2">$260.00</span>             
+                                 </div>
+                     
+                             <div class="button">           
+                                 <button class="btn-hover btn-hover-1">VIEW CART</button>
+                             </div>
+                     
+                          <div class="button">
+                             <button class="btn-hover btn-hover-1">CHEAKOUT</button>
+                          </div>
+                     
+                     
+                             
+                             </div>
+                     
+                     
+                          </div>
+                        </ul>
+                        
+                      
+                    </nav>
+        </header>
+    </div>
+  </div>
+
+
+  <!-- x xx x x sitemap x x x x  -->
+
+<div class="container container-sitemap">
+  <div class="row">
+    <div class="heading">
+      <h1>
+          SiteMap</h1>
+</div>
+
+
+  <div class="col-lg-12">
+    <div class="sitemap-parent">
+<div class="sitemap">
+
+<a href="../index.html"><h3>Home</h3></a>
+  
+<a href="./sitemap.html" > <h3>Sitemap</h3> </a>
+
+    <a href="#"><h3 class="mb-4">Categories</h3></a>
+
+    <ul class="category-list">
+      <a href="./shirts.html"> <li  class="item">Shirts</li> </a>
+      <a href="./frocks.html"><li  class="item">Frocks </li></a>
+      <a href="./p.t.track pants.html"><li class="item">Pants</li></a>
+      <a href="./p.t.shorts.html"><li class="item">Shorts</li></a>
+      <a href="./p.t.tshirts.html"><li  class="item">T.Shirts</li></a>
+      <a href="./ties.html"><li  class="item">Ties</li></a>
+      <a href="./belts.html"><li  class="item">Belts</li></a>
+      <a href="./logo.html"><li  class="item">Logos </li></a>
+      <a href="./socks.html"><li  class="item">Socks </li></a>
+    </ul>
+    <a href="./about.html" class="about"><h3>About</h3></a>
+    <a href="./feedback.html"><h3>Feedback</h3></a>
+    <a href="./contactUs.html"><h3>Contact</h3></a>
+    <a href="./gallery (1).html" class="gallery"><h3>Gallery</h3></a>
+  
+  
+
+  </div>
+  
+</div>
+</div>
+</div>	
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div class="container-fluid  container-footer">
+  
+          <div class="row">
+  
+            
+             <div class="col-md-4 col-lg-3 col-xl-3 mt-3">
+             <div class="footer-item">
+               <img src="../images/logo4 (1).png" alt="" width="90px" height="100px">
+              <p class="mt-4">
+                Discover the perfect blend of style and professionalism with our exceptional uniform collection.
+              </p>
+            </div>
+            </div>
+          
+  
+  
+            <div class="col-md-4 col-lg-3 col-xl-3 mt-3">        
+                <div class="footer-item">
+                  <h3 class="footer-title left">Help & FAQS</h3>
+                
+                  <ul><li><a  href="#">online ordering</a> </li>
+                    <li><a href="#">shopping</a></li>
+                    <li><a href="#">bilding</a></li>
+                    <li><a href="#">customer service</a> </li>
+                    <li><a href="#">return and exchanges</a></li></ul>
+           
+              
+            </div>
+           
+            </div>
+           
+  
+           
+  
+            <div class="col-md-4 col-lg-3 col-xl-3 mt-3">
+  
+           
+            
+              
+              <div class="footer-item">
+                <h3 class="footer-title left">Ways To Shop</h3>
+                <ul><li><a href="#">Featured Items</a></li>
+                  <li><a  href="#">Just Arrived</a> </li>
+                  <li><a href="#">Best Selling</a></li>
+                  <li><a href="#">New Items</a> </li>
+                  <li><a href="#">Top Items</a></li>
+                </ul>
+          
+            
+          </div>
+  
+              </div>
+         
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+             
+              <div class="footer-item follow">
+                <h3 class="footer-title">Follow us</h3>
+                <div class="follow-icon mt-4">
+                 <a href="#"><i class="fa fa-facebook"></i></a>
+                 <a href="#"><i class="fa fa-instagram"></i></a>
+                 <a href="#"> <i class="fa fa-twitter"></i></a>
+                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                </div></div>
+             
+            </div>
+         
+      
+      </div>
+      <div class="text-center">
+      <p>  © 2023 Copyright :<a class="text-white" href="#" style=" text-decoration: none;"><b>Maverickdresses</b></a></p>
+      </div>
+
+      
+  
+  </div>
+  </footer>
+
+  <script>
+    document.querySelector('.menu-icon').addEventListener('click', function () {
+           
+             var menu = document.querySelector('.menu');
+            
+             menu.classList.toggle('active');
+         });
+
+         </script>
+
+
+</body>
+</html>

@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./css/style (3).css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+   <title>Maverick Dress</title>
+   <script src="script.js"></script>
+</head>
+
+ <script>
+  
+
+// ############## Card-Area#################
+function cartToggle(){
+            let menu = document.getElementById("cart-items");
+            menu.classList.toggle("active");
+        }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.querySelector(".slider");
+    const slides = Array.from(document.querySelectorAll(".slide"));
+    const prevBtn = document.querySelector(".prev");
+    const nextBtn = document.querySelector(".next");
+    const slideWidth = slides[0].offsetWidth;
+    let currentSlide = 0;
+
+    function showSlide(slideIndex) {
+      slider.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+      currentSlide = slideIndex;
+    }
+
+    function prevSlide()  {
+      if (currentSlide > 0) {
+        showSlide(currentSlide - 1);
+      }
+
+    }
+
+    function nextSlide() {
+      if (currentSlide < slides.length - 1) {
+        showSlide(currentSlide + 1);
+      }
+
+    }
+
+    prevBtn.addEventListener("click", prevSlide);
+    nextBtn.addEventListener("click", nextSlide);
+  });''
+
+
+
+// ############# review side #############
+
+
+ </script>
+
+<body>
+ <!-- x x x top-conttainer x x x  -->
+  
+
+  <div class="container container-top">
+    <div class="row">
+        <header>
+          <nav>
+            <div class="logo"><a href="#"><img src="./images/logo3 (1).png" alt="" width="90px" height="90px"></a>
+            </div>
+                    
+          
+            <div class="menu-icon">
+            <i class="fa fa-bars"></i>
+        </div>
+                        <ul class="menu">
+                            <li class="home"><a href="./index.html">Home</a></li>
+                            <li ><a href="./pages/about.html" class="menu-item">About</a></li>                    
+                            <li ><a href="./pages/gallery (1).html" class="menu-item">Gallery</a></li>
+                            <li><a href="./pages/contactUs.html" class="menu-item">Contact</a></li>                         
+                            <li class="cato"><a href="#" class="cato menu-item">Pages</a>
+                              <ul class="cato-menu">
+                                
+                                  <li><a href="./pages/sitemap.html"  style="font-size: 17px; font-weight: 400;" >Sitemap</a></li>
+                                  <li><a href="./pages/feedback.html"  style="font-size: 17px; margin-top: 5px; font-weight: 400;" >FeedBack</a></li>                                   
+                                
+                                </ul> </li>
+                          
+                            <li class="cato"><a href="#" class="cato menu-item">Categories</a>
+                            
+                              <ul class="cato-menu">
+                                  <li><a href="./pages/p.t.track pants.html" >P.T Pants</a></li>
+                                  <li><a href="./pages/p.t.shorts.html" >P.T Shorts</a></li>
+                                  <li><a href="./pages/p.t.tshirts.html" >T-Shirts</a></li>
+                                  <li><a href="./pages/shirts.html" >Shirts</a></li>
+                                  <li><a href="./pages/frocks.html" >Frocks</a></li>
+                                  <li><a href="./pages/skirt.html" >Skirts</a></li>
+                                  <li><a href="./pages/socks.html" >Socks</a></li>
+                                  <li><a href="./pages/logo.html" >Logos</a></li>
+                                  <li><a href="./pages/belts.html" >Belts</a></li>
+                                  <li><a href="./pages/ties.html" >Ties</a></li>
+                              </ul> 
+                            </li>
+
+                          
+                            <div class="icons">
+                             <a href="#"> <i class="fa fa-user-circle" ></i></a>
+                               <a href="#"> <i class="fa fa-heart-o" ></i></a>
+
+                              
+                                <a href="#" onclick="cartToggle()"> <i class="fa fa-shopping-cart" ></i></a>
+
+                                <div id="cart-items"> 
+                                 <div class="cart-row">
+                                     <div class="cart-thmbnil">
+                                         <img src="./images/mens (3).jpeg" alt="" width="90px" height="80px">
+                                     </div>
+                     
+                                     <div class="thmbnil-content">
+                                        <a href=""> <h6>Men's Belt</h6></a>
+                                         <span class="quantity">Qty : 02</span> <br>
+                                         <span class="price">$200.00</span>
+                                     </div>
+                                         <div class="cart-icon">
+                                             <a href="#">
+                                                 <i class="fa fa-close"></i></a>
+                                         </div>
+                                         
+                                    
+                                     </div>
+                     
+                                     
+                                    
+                     
+                                 <div class="cart-row">
+                                     <div class="cart-thmbnil">
+                                         <img src="./images/school2.jpeg" alt=""  width="90px" height="90px">
+                                     </div>
+                     
+                                     <div class="thmbnil-content">
+                                         <a href=""> <h6>Girls Skirts</h6></a>
+                                         <span class="quantity">Qty : 01</span> <br>
+                                         <span class="price">$260.00</span>
+                                     </div>
+                     
+                                     <div class="cart-icon">
+                                         <a href="#">
+                                             <i class="fa fa-close"></i></a>
+                                     </div>
+                     
+                                 </div>
+                     
+                     
+                     
+                               
+                                 <div class="shipping">
+                                  
+                                     <span>shipping:</span>
+                                     <span class="cost">$20.00</span>                    
+                                 </div>
+                     
+                     
+                                 <div class="total-cost">                
+                                  
+                                     <span>Total:</span>                            
+                                     <span class="cost-2">$260.00</span>             
+                                 </div>
+                     
+                             <div class="button">           
+                                 <button class="btn-hover btn-hover-1">VIEW CART</button>
+                             </div>
+                     
+                          <div class="button">
+                             <button class="btn-hover btn-hover-1">CHEAKOUT</button>
+                          </div>
+                     
+                     
+                             
+                             </div>
+                     
+                     
+
+
+
+                          </div>
+                        </ul>
+                        
+                      
+                    </nav>
+        </header>
+    </div>
+  </div>
+           
+     <!-- ############-icons-#################### -->
+      
+ <!-- ############-nav-container-end-#################### -->
+
+
+<!-- X X X X X X X -->
+                    <div class="container-fluid container-carousel">
+                  <div class="row">
+                     
+                      <div id="myCarousel" class="carousel" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                          <li data-target="#myCarousel" data-slide-to="1"></li>
+                          <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                    
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                    
+                          <div class="item active">
+                            <img src="./images/slider2.avif" alt="slider">
+                              <div class=" col-md-8 caption-1">
+                               <div class="carousel-caption"  >
+                                <p>Get Perfect and Comfortable</p>
+                                <h5>Uniforms Here</h5>
+                             
+                                <button class="btn"><a href="#" class="btn-one">Shop Now</a></button>
+                            </div>
+                          </div>
+                          </div>
+                    
+                          <div class="item">
+                            <img src="./images/slider1.avif" alt="slider">
+
+                            <div class="col-md-8">
+                              <div class="carousel-caption" >
+                                <p>Look Stylish With The</p>
+                                <h5>Best Uniforms</h5>
+                               
+                                <button class="btn"><a href="#" class="btn-one">Shop Now</a></button>
+                           </div>
+                         </div>
+                          </div>
+                          <div class="item">
+                            <img src="./images/slider6.jpg" alt="slider">
+
+                            <div class="col-md-8">
+                              <div class="carousel-caption" >
+                                <p>Inspiring Uniforms </p>
+                                <h5>To Inspire You</h5>
+                               
+                                <button class="btn"><a href="#" class="btn-one">Shop Now</a></button>
+                           </div>
+                         </div>
+                          </div>
+
+
+                      
+                        </div>
+                    
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                    </div>
+
+     <!-- ############-carousol-end-#################### -->
+
+                    <!-- X X X X X X X -->
+
+<!-- 
+##############catogries#################### -->
+
+    <div class="container container-catogry">
+<div class="row">
+
+<div class="col-md-12">
+  <div class="title" >
+    <h1>Shop By Category</h1>
+  </div>
+</div>
+
+
+<!-- #############category-1################ -->
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry"  >
+    <a href="../maverik-dresses/pages/shirts.html">
+      <img src="./images/shirt6.jpg" alt="" ></a>
+    <div class="caption">
+      <h3><a href="./pages/shirts.html">Shirts</a></h3>
+    </div>
+   
+  </div>
+</div>
+
+
+
+<!-- #############category-2################ -->
+
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+   <a href="../maverik-dresses/pages/shirts.html"> <img src="./images/girlsfrokcs (4).png" alt=""  ></a>
+    <div class="caption">
+    <h3><a href="./pages/frocks.html">Frocks</a></h3>
+  </div>
+</div>
+</div>
+
+<!-- #############category-3################ -->
+
+
+<div class=" col-xm-8  col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+    <img src="./images/mens shorts (8).jpeg" alt=""  >
+    <div class="caption">
+    <h3 class=""><a href="./pages/p.t.shorts.html" >Shorts</a></h3>
+  </div>
+</div>
+</div>
+<!-- #############category-4################ -->
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+    <img src="./images/pant4.png" alt="">
+    <div class="caption">
+      <h3><a href="./pages/p.t.track pants.html" >Pants</a></h3>
+  </div>
+</div>
+</div>
+
+
+
+<!-- #############category-5################ -->
+<div class=" col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+    <img src="./images/blackskirt.jpg" alt=""  >
+    <div class="caption">
+      <h3><a href="./pages/skirt.html" >Skirts</a></h3>
+    </div>
+  </div>
+</div>
+
+
+<!-- #############category-6################ -->
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+    <img src="./images/allsocks13 (6).jpg" alt="">
+    <div class="caption">
+    <h3 ><a href="./pages/socks.html" >Socks</a></h3>
+    </div>
+  </div>
+</div>
+
+<!-- #############category-7################ -->
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+    <img src="./images/fatureditem (44).jpg" alt="">
+    <div class="caption ties">
+    <h3><a href="./pages/ties.html">Ties</a></h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- #############category-8################ -->
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+    <img src="./images/belt2.jpeg" alt=""  >
+    <div class="caption">
+      <h3><a href="./pages/belts.html" >Belts</a></h3>
+      </div>
+  </div>
+</div>
+
+
+<!-- #############category-9################ -->
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3">
+  <div class="catogry" >
+    <img src="./images/sportshirts (2).jpg" alt="">
+    <div class="caption">
+      <h3><a href="./pages/p.t.tshirts.html">T-Shirts</a></h3>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- #############category-10################ -->
+<div class="col-xm-8 col-sm-6 col-md-4 col-lg-3" >
+  <div class="catogry" >
+    <img src="./images/logos (5).jpg" alt=""  >
+    <div class="caption">
+      <h3><a href="./pages/logo.html">Logos</a></h3>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+</div>
+
+<!--X X X X X X X X X X X X X X X -->
+
+<!-- ########### feature items #################### -->
+
+
+<div class="container-fluid container-featured"  >
+  <div class="row">
+ 
+    <div class="col-md-12">
+      <div class="title-1 mb-3" >
+        <h1>Featured Items </h1>
+      </div>
+
+    </div>
+
+
+
+
+  <div class="col-sm-6 col-md-4 col-lg-4">
+    <div class="list-title">
+      <h5>LATEST ITEMS.</h5>
+    </div>
+
+<div class="cards-disply">
+
+  <div class="card-info"   >
+    <div class="card-thumbnil">
+    <a href="./pages/shirts.html"> <img src="./images/shirt3.png" alt=""></a>
+     </div>
+    
+      <div class="details">
+      <div class="card-title"><a href="./pages/shirts.html"><h4>Medical Uniform</h4></a></div>
+      <div class="card-price"><span>$50.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+   </div>
+
+
+   <div class="card-info"  >
+    <div class="card-thumbnil">
+      <a href="./pages/belts.html">
+        <img src="./images/fatureditem (46).jpg" alt=""></a>
+     </div>
+   
+      <div class="details">
+    <div class="card-title"><a href="./pages/belts.html"><h4>Belts For Mens</h4></a></div>
+      <div class="card-price"><span>$17.500</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+   </div>
+ 
+   
+   <div class="card-info"   >
+    <div class="card-thumbnil">
+    <a href="./pages/shirts.html"> <img src="./images/shirt6.jpg" alt=""></a>
+     </div>
+        <div class="details">
+      <div class="card-title"><a href="./pages/shirts.html"><h4>Chiefs Uniform</h4></a></div>
+      <div class="card-price"><span>50$.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+   </div>
+
+   
+   <div class="card-info"   >
+    <div class="card-thumbnil">
+ <a href="./pages/p.t.track pants.html"><img src="./images/pant8.jpeg" alt=""></a>
+     </div>
+          <div class="details">
+      <div class="card-title"><a href="./pages/p.t.track pants.html"><h4>Track Pants</h4></a></div>
+      <div class="card-price"><span>50$.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+   </div>
+
+</div>  <!-- x x x x x cards-disply-end x x x x  -->  
+</div>
+
+
+
+<!-- x x x x x 2nd List  x x x x  --> 
+
+<div class="col-sm-6 col-md-4 col-lg-4">
+  <div class="list-title">
+    <h5>BEST SALE.</h5>
+  </div>
+
+<div class="cards-disply">
+
+<div class="card-info"   >
+    <div class="card-thumbnil">
+      <a href="./pages/ties.html">
+     <img src="./images/fatureditem (10).jpg" alt="">
+    </a>
+     </div>
+            <div class="details">
+      <div class="card-title"><a href="./pages/ties.html"><h4>Ties For Mens</h4></a></div>
+      <div class="card-price"><span>50$.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+   </div>
+
+   <div class="card-info"   >
+    <div class="card-thumbnil">
+      <a href="./pages/socks.html"><img src="./images/fatureditem (37).jpg" alt=""></a>
+
+     </div>
+          <div class="details">
+      <div class="card-title"><a href="./pages/socks.html"><h4>All Types Of Socks</h4></a></div>
+      <div class="card-price"><span>$8.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+  
+   </div>
+
+
+   
+   <div class="card-info"   >
+    <div class="card-thumbnil">
+      <a href="./pages/frocks.html"> <img src="./images/frock (1).jpg" alt=""></a>
+     </div>
+          <div class="details">
+      <div class="card-title"><a href="./pages/frocks.html"><h4>Uniform frocks</h4></a></div>
+      <div class="card-price"><span>$20.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+   </div>
+
+
+   
+   <div class="card-info"   >
+    <div class="card-thumbnil">
+      <a href="./pages/p.t.shorts.html"><img src="./images/fatureditem (41).jpg" alt=""></a>
+     </div>
+            <div class="details">
+      <div class="card-title"><a href="./pages/p.t.shorts.html"><h4>P.T Shorts</h4></a></div>
+      <div class="card-price"><span>$33.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star-half-empty"></i>
+     </div>
+     </div>
+   </div>
+
+</div>  <!-- x x x x x cards-disply-end x x x x  -->  
+</div>
+
+<!-- x x x x x 3rd List  x x x x  --> 
+<div class="col-sm-6 col-md-4 col-lg-4">
+ 
+<div class="card-list">
+  <div class="list-title" >
+    <h5>TOP RATED.</h5>
+</div>
+
+<div class="cards-disply">
+
+
+  <div class="card-info"   >
+    <div class="card-thumbnil">
+      <a href="./pages/ties.html"><img src="./images/fatureditem (44).jpg" alt=""></a>
+     </div>
+            <div class="details">
+       <div class="card-title"><a href="./pages/ties.html"><h4>Ties For Mens</h4></a></div>   
+       <div class="card-price"><span>$22.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+     </div>
+     </div>
+
+   </div>
+
+
+  
+
+
+     <div class="card-info">
+  <div class="card-thumbnil">
+    <a href="./pages/skirt.html">  <img src="./images/skirt3.jfif" alt=""></a>
+   </div>
+        <div class="details">
+  <div class="card-title"><a href="./pages/skirt.html"><h4>Girls Skirt</h4></a></div>
+    <div class="card-price"><span>50$.00</span></div>
+    <div class="card-rating">
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+   </div>
+   </div>
+ </div>
+
+
+
+
+
+
+     <div class="card-info"   >
+  <div class="card-thumbnil">
+    <a href="./pages/logo.html">  <img src="./images/fatureditem (28).jpg" alt=""></a>
+   </div>
+        <div class="details">
+  <div class="card-title"><a href="./pages/logo.html"><h4>Monograms</h4></a></div>
+    <div class="card-price"><span>$8.00</span></div>
+    <div class="card-rating">
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+     <i class="fa fa-star"></i>
+   </div>
+   </div>
+ </div>
+
+
+ 
+
+ 
+ <div class="card-info"   >
+  <div class="card-thumbnil">
+    <a href="./pages/ties.html"><img src="./images/fatureditem (10).jpg" alt=""></a>
+   </div>
+          <div class="details">
+     <div class="card-title"><a href="./pages/ties.html"><h4>Ties For Mens</h4></a></div>   
+     <div class="card-price"><span>$22.00</span></div>
+      <div class="card-rating">
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+       <i class="fa fa-star"></i>
+     </div>
+     </div>
+  
+   </div>
+
+ 
+
+
+</div>  <!-- x x x x x cards-disply-end x x x x  -->  
+</div>
+
+</div>  <!-- x x x x x row x x x x  -->  
+</div> <!-- x x x x x container x x x x  -->  
+
+<!-- 
+########### customer review ############### -->
+
+<div class="container container-customer">
+<div class="row">
+
+  
+<div class="col-md-12">  <h1 class="review-title"  >Customer Review</h1></div>
+
+
+  <div class="review-slider">
+
+
+      <div class=" review">
+          <div class="col-sm-10 col-md-10 col-lg-10 small-area">
+              <div class="slider-content" >
+                  <img src="./images/review1 (3).jpg" alt="">
+                  <p>"5-Star Experience: Your Uniform Website Delivered Exactly what I Needed, with Style and Durability!"</p>
+              <h4>William Henry...</h4>
+              </div>
+             </div>
+      </div>
+
+
+      
+      <div class="review">
+          <div class="col-sm-10 col-md-10 col-lg-10 small-area">
+              <div class="slider-content">
+                  <img src="./images/download.jpg" alt="">
+                  <p>"5-Star Experience: Your Uniform Website Delivered Exactly what I Needed, with Style and Durability!"</p>
+
+              <h4>Volgaski..</h4>
+              </div>
+             </div>
+      </div>
+      <div class="review"> 
+        <div class="col-sm-10 col-md-10 col-lg-10 small-area">
+          <div class="slider-content">
+              <img src="./images/photo (8).jpg" alt="">
+          <p>"5-Star Experience: Your Uniform Website Delivered Exactly what I Needed, with Style and Durability!"</p>
+          <h4>Liam wan...</h4>
+          </div>
+         </div></div>
+    
+    </div>
+    
+</div>
+
+
+</div>
+
+<!-- 
+#############-cards-images############### -->
+
+    <div class="container  owal-container">
+      <div class="row">
+  
+        <div class="col-md-12">
+          <div class="title-1 title-2">
+            <h1 >New Items</h1>
+          </div>
+        </div>   
+
+<!-- ############# SLIDE 1 ############### -->
+          <div class="slider-container">
+              <div class="slider">
+
+                <div class="slide">
+                  <a href="./pages/shirts.html">  <img src="./images/shirt3.png" class="card-img-top" alt="Image 1" ></a>
+                    <div class="card-body">
+                      <h4 class="card-title">Medical Uniform</h4>
+                      <div class="card-price">
+                        <p style=" color: #bc2929; font-size: 23px; font-weight: bold;">$55.00 </p>
+                      </div>
+
+                      <div class="card-button">
+                       
+                        <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                      </div>
+                    </div>
+                    <div class="icons">
+                      <a href="#"><i class="fa fa-cart-plus"></i></a>
+                      <a href="#"><i class="fa fa-search-plus"></i></a>
+                      <a href="#"><i class="fa fa-heart"></i></a>
+                    </div>
+                </div>
+
+
+<!-- ############# SLIDE 2 ############### -->
+                <div class="slide">
+                  <a href="./pages/p.t.track pants.html"><img src="./images/pant6.jpg" alt="Image 2"width="400px" height="500px"></a>
+    
+                  <div class="card-body">
+                    <h4 class="card-title">P.T Track pants</h4>
+                    <div class="card-price">
+                      <p style=" color:  #bc2929; font-size: 23px; font-weight: bold;">$40.00 <span style="margin-left: 10px; font-size: 18px;  color: #7b7878; font-weight: 400;"><del>$95.0</del></span></p>
+                    </div>
+
+                    <div class="card-button">
+                      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                </div>
+
+  <!-- ############# SLIDE 3 ############### -->
+  
+                 <div class="slide" >
+                  <a href="./pages/shirts.html"><img src="./images/shirt6.jpg" alt="Image 3"width="400px" height="500px"></a>
+                  
+                  <div class="card-body">
+                    <h4 class="card-title">Chiefs Uniforms</h4>
+                    <div class="card-price">
+                      <p style=" color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 </p>
+                    </div>
+
+                    <div class="card-button">
+                     
+                      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                </div>
+
+
+
+ <!-- ############# SLIDE 4 ############### -->                   
+                <div class="slide" >
+                  <a href="./pages/ties.html"><img src="./images/tie2.jpeg" alt="Image 1"width="400px" height="500px"></a>
+
+
+                  <div class="card-body">
+                    <h4 class="card-title">Ties For Mens</h4>
+                    <div class="card-price">
+                      <p style=" color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 <span style="margin-left: 10px; font-size: 18px;  color: #7b7878; font-weight: 400;"><del>$95.0</del></span></p>
+                    </div>
+
+                    <div class="card-button">
+                     
+                      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                </div>
+
+  <!-- ############# SLIDE 5 ############### -->              
+                <div class="slide">
+                  <a href="./pages/p.t.tshirts.html"> <img src="./images/ts6.jpg" alt="Image 2"width="400px" height="500px"></a>
+                 
+              <div class="card-body">
+                <h4 class="card-title">P.T Shirts For Mens</h4>
+                    <div class="card-price">
+                      <p style="color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 <span style="margin-left: 10px; font-size: 18px;  color: #7b7878; font-weight: 400;"><del>$95.0</del></span></p>
+                    </div>
+
+                    <div class="card-button">
+                     
+                      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                </div>
+
+  <!-- ############# SLIDE 6 ############### -->
+                <div class="slide">
+                  <a href="./pages/skirt.html"> <img src="./images/skirt5.jfif" alt="Image 2"width="400px" height="500px"></a>
+                 
+                  <div class="card-body">
+                    
+                    <h4 class="card-title">Skirts For Girls</h4>
+                    <div class="card-price">
+                      <p style="color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 </p>
+                    </div>
+
+                    <div class="card-button">
+                     
+                      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                </div>
+
+
+  <!-- ############# SLIDE 7 ############### -->              
+                <div class="slide" >
+                  <a href="./pages/p.t.shorts.html"> <img src="./images/short4.jpeg" alt="Image 2"width="400px" height="500px"></a>
+                 
+              <div class="card-body">
+                <h4 class="card-title">P.T Short For Mens</h4>
+                    <div class="card-price">
+                      <p style="color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 <span style="margin-left: 10px; font-size: 18px;  color: #7b7878; font-weight: 400;"><del>$95.0</del></span></p>
+                    </div>
+
+                    <div class="card-button">
+                     
+                      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                </div>
+
+
+   <!-- ############# SLIDE 8 ############### -->             
+                <div class="slide">
+                  <a href="./pages/belts.html"><img src="./images/belt2.jpeg" alt="Image 1" width="400px" height="500px"></a>
+               
+                  <div class="card-body">
+                    <h4 class="card-title">Belts For Mens</h4>
+                    <div class="card-price">
+                      <p style="color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 </p>
+                    </div>
+
+                    <div class="card-button">
+                     
+                      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+                    </div>
+                  </div>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-cart-plus"></i></a>
+                    <a href="#"><i class="fa fa-search-plus"></i></a>
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                </div>
+
+<!-- ############# SLIDE 9 ############### -->
+<div class="slide">
+  <a href="./pages/logo.html"> <img src="./images/item (7).jpg" alt="Image 2"width="400px" height="500px"></a>
+ 
+   <div class="card-body">
+    <h4 class="card-title">Diffrents Lgos</h4>
+    <div class="card-price">
+      <p style="color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 <span style="margin-left: 10px; font-size: 18px;  color: #7b7878; font-weight: 400;"><del>$95.0</del></span></p>
+    </div>
+
+    <div class="card-button">
+     
+      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+    </div>
+  </div>
+  <div class="icons">
+    <a href="#"><i class="fa fa-cart-plus"></i></a>
+    <a href="#"><i class="fa fa-search-plus"></i></a>
+    <a href="#"><i class="fa fa-heart"></i></a>
+  </div>
+</div>
+
+
+<!-- ############# SLIDE 9 ############### -->
+<div class="slide">
+  <a href="./pages/frocks.html">  <img src="./images/girlsfrokcs (13).jpg" alt="Image 1" width="400px" height="500px"></a>
+
+  <div class="card-body">
+    <h4 class="card-title">Frocks For Girls</h4>
+    <div class="card-price">
+      <p style="color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 </p>
+    </div>
+
+    <div class="card-button">
+     
+      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+    </div>
+  </div>
+  <div class="icons">
+    <a href="#"><i class="fa fa-cart-plus"></i></a>
+    <a href="#"><i class="fa fa-search-plus"></i></a>
+    <a href="#"><i class="fa fa-heart"></i></a>
+  </div>
+</div>
+
+<!-- ############# SLIDE 10 ############### -->
+<div class="slide"> 
+  <a href="./pages/socks.html"> <img src="./images/allsocks (4).jpg" alt="Image 2"width="400px" height="500px"></a>
+
+   <div class="card-body">
+    <h4 class="card-title">All Kinds Of Socks</h4>
+    <div class="card-price">
+      <p style="color:  #bc2929; font-size: 23px; font-weight: bold;">$55.00 <span style="margin-left: 10px; font-size: 18px;  color: #7b7878; font-weight: 400;"><del>$95.0</del></span></p>
+    </div>
+
+    <div class="card-button">
+     
+      <a href="#" class="card-link-1" style="margin-left: 10px;">Buy Now</a>
+    </div>
+  </div>
+  <div class="icons">
+    <a href="#"><i class="fa fa-cart-plus"></i></a>
+    <a href="#"><i class="fa fa-search-plus"></i></a>
+    <a href="#"><i class="fa fa-heart"></i></a>
+  </div>
+</div>
+
+
+<!-- ######################slides End################### -->
+
+ </div>
+              
+  <!-- ############# SLIDE icons ############### -->       
+               <div class="navigation">
+                <div class="prev">
+                  <i class="left fa fa-angle-left"></i>          
+                 </div>
+                <div class="next">
+                  <i class="right fa fa-angle-right"></i>
+                </div>
+
+               </div>  
+              </div>       
+</div>
+</div>
+
+<!--footer -->
+
+<footer>
+  <div class="container-fluid  container-footer">
+  
+          <div class="row">
+  
+            
+             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+             <div class="footer-item">
+               <img src="./images/logo4 (1).png" alt="" width="90px" height="100px">
+               <p class="mt-4">
+              Discover the perfect blend of style and professionalism with our exceptional uniform collection.
+              </p>
+            </div>
+            </div>
+          
+  
+  
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">        
+                <div class="footer-item">
+                  <h3 class="footer-title left">Help & FAQS</h3>
+                
+                  <ul><li><a  href="#">online ordering</a> </li>
+                    <li><a href="#">shopping</a></li>
+                    <li><a href="#">bilding</a></li>
+                    <li><a href="#">customer service</a> </li>
+                    <li><a href="#">return and exchanges</a></li></ul>
+           
+              
+            </div>
+           
+            </div>
+           
+  
+           
+  
+            <div class="col-md-4 col-lg-3 col-xl-3 mt-3">
+  
+           
+            
+              
+              <div class="footer-item">
+                <h3 class="footer-title left">Ways To Shop</h3>
+                <ul><li><a href="#">Featured Items</a></li>
+                  <li><a  href="#">Just Arrived</a> </li>
+                  <li><a href="#">Best Selling</a></li>
+                  <li><a href="#">New Items</a> </li>
+                  <li><a href="#">Top Items</a></li>
+                </ul>
+          
+            
+          </div>
+  
+              </div>
+         
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mt-3">
+             
+              <div class="footer-item follow">
+                <h3 class="footer-title">Follow us</h3>
+                <div class="follow-icon mt-4">
+                 <a href="#"><i class="fa fa-facebook"></i></a>
+                 <a href="#"><i class="fa fa-instagram"></i></a>
+                 <a href="#"> <i class="fa fa-twitter"></i></a>
+                 <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                </div></div>
+             
+            </div>
+         
+      
+      </div>
+      <div class="text-center">
+      <p>  © 2023 Copyright :<a class="text-white" href="#" style=" text-decoration: none;"><b>Maverickdresses</b></a></p>
+      </div>
+  
+  </div>
+  </footer>
+
+  <a href="#" class="scroll-up"><i class="fa fa-arrow-circle-up"></i></a>
+
+
+ 
+
+  <script>
+
+
+
+
+
+   document.querySelector('.menu-icon').addEventListener('click', function () {
+          
+            var menu = document.querySelector('.menu');
+           
+            menu.classList.toggle('active');
+        });
+
+   
+  
+const review = document.querySelectorAll('.review');
+let =currentReview = 0;
+
+// Function to show the next slide
+function showNextReview() {
+review[currentReview].classList.remove('active');
+currentReview = (currentReview + 1) % review.length;
+review[currentReview].classList.add('active');
+}
+
+// Set the interval for auto-playing
+setInterval(showNextReview, 3000); // Change slide every 3 seconds
+
+// Show the initial slide
+review[currentReview].classList.add('active');
+
+</script>
+
+
+    
+</body>
+</html> 
